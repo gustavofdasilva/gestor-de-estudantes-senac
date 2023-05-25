@@ -16,5 +16,20 @@ namespace gestor_de_estudantes
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            pictureBox2.Image = Image.FromFile("../../imagens/user.png");
+        }
     }
 }
