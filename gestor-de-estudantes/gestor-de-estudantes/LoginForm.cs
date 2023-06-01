@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +31,19 @@ namespace gestor_de_estudantes
         private void LoginForm_Load(object sender, EventArgs e)
         {
             pictureBox2.Image = Image.FromFile("../../imagens/user.png");
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            MEU_BD bancoDeDados = new MEU_BD();
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+            DataTable tabela = new DataTable();
+            MySqlCommand comando = new MySqlCommand("SELECT * FROM `usuarios` WHERE `username` = @usn AND `password` = @psw", bancoDeDados.getConexao);
         }
     }
 }
