@@ -16,6 +16,7 @@ namespace gestor_de_estudantes
         public LoginForm()
         {
             InitializeComponent();
+            
         }
 
         private void label1_Click(object sender, EventArgs e)
