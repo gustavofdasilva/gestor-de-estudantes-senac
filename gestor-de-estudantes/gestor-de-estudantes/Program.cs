@@ -16,8 +16,16 @@ namespace gestor_de_estudantes
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new LoginForm());
             LoginForm telaDeLogin = new LoginForm();
+
+            if (telaDeLogin.ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new FormPrincipal());
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
     }
 }

@@ -52,12 +52,17 @@ namespace gestor_de_estudantes
             adaptador.SelectCommand = comando;
             adaptador.Fill(tabela);
 
-            if(tabela.Rows.Count > 0)
+            if (tabela.Rows.Count > 0)
             {
-                MessageBox.Show("Yes");
-            } else
+                //MessageBox.Show("YES");
+                this.DialogResult = DialogResult.OK;
+            }
+            else
             {
-                MessageBox.Show("NO");
+                MessageBox.Show("Usuário ou senha inválidos",
+                    "Erro de Login",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
             }
         }
     }
