@@ -30,14 +30,14 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.eSTUDANTEToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cURSOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.nOTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inserirEstudanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listarEstudanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.estatísticaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarRemoverToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gerenciarEstudantesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imprimirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cURSOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.nOTASToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,18 +65,6 @@
             this.eSTUDANTEToolStripMenuItem.Name = "eSTUDANTEToolStripMenuItem";
             this.eSTUDANTEToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
             this.eSTUDANTEToolStripMenuItem.Text = "ESTUDANTE";
-            // 
-            // cURSOToolStripMenuItem
-            // 
-            this.cURSOToolStripMenuItem.Name = "cURSOToolStripMenuItem";
-            this.cURSOToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.cURSOToolStripMenuItem.Text = "CURSO";
-            // 
-            // nOTASToolStripMenuItem
-            // 
-            this.nOTASToolStripMenuItem.Name = "nOTASToolStripMenuItem";
-            this.nOTASToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.nOTASToolStripMenuItem.Text = "NOTAS";
             // 
             // inserirEstudanteToolStripMenuItem
             // 
@@ -115,6 +103,18 @@
             this.imprimirToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.imprimirToolStripMenuItem.Text = "Imprimir";
             // 
+            // cURSOToolStripMenuItem
+            // 
+            this.cURSOToolStripMenuItem.Name = "cURSOToolStripMenuItem";
+            this.cURSOToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.cURSOToolStripMenuItem.Text = "CURSO";
+            // 
+            // nOTASToolStripMenuItem
+            // 
+            this.nOTASToolStripMenuItem.Name = "nOTASToolStripMenuItem";
+            this.nOTASToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
+            this.nOTASToolStripMenuItem.Text = "NOTAS";
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -124,6 +124,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormPrincipal";
             this.Text = "FormPrincipal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
