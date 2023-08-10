@@ -70,6 +70,7 @@
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(223, 20);
             this.textBoxNome.TabIndex = 1;
+            this.textBoxNome.TextChanged += new System.EventHandler(this.textBoxNome_TextChanged);
             // 
             // textBoxSobrenome
             // 
@@ -189,8 +190,10 @@
             this.pictureBoxFoto.Location = new System.Drawing.Point(268, 315);
             this.pictureBoxFoto.Name = "pictureBoxFoto";
             this.pictureBoxFoto.Size = new System.Drawing.Size(139, 123);
+            this.pictureBoxFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxFoto.TabIndex = 13;
             this.pictureBoxFoto.TabStop = false;
+            this.pictureBoxFoto.Click += new System.EventHandler(this.pictureBoxFoto_Click);
             // 
             // labelFoto
             // 
@@ -210,6 +213,7 @@
             this.buttonEnviarFoto.TabIndex = 15;
             this.buttonEnviarFoto.Text = "Enviar foto";
             this.buttonEnviarFoto.UseVisualStyleBackColor = true;
+            this.buttonEnviarFoto.Click += new System.EventHandler(this.buttonEnviarFoto_Click);
             // 
             // buttonCadastrar
             // 
@@ -219,6 +223,7 @@
             this.buttonCadastrar.TabIndex = 16;
             this.buttonCadastrar.Text = "Cadastrar";
             this.buttonCadastrar.UseVisualStyleBackColor = true;
+            this.buttonCadastrar.Click += new System.EventHandler(this.buttonCadastrar_Click);
             // 
             // buttonCancelar
             // 
@@ -228,6 +233,7 @@
             this.buttonCancelar.TabIndex = 17;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // groupBox1
             // 
