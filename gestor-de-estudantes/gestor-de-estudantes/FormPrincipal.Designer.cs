@@ -78,6 +78,7 @@
             this.listarEstudanteToolStripMenuItem.Name = "listarEstudanteToolStripMenuItem";
             this.listarEstudanteToolStripMenuItem.Size = new System.Drawing.Size(184, 22);
             this.listarEstudanteToolStripMenuItem.Text = "Listar estudante";
+            this.listarEstudanteToolStripMenuItem.Click += new System.EventHandler(this.listarEstudanteToolStripMenuItem_Click);
             // 
             // estatísticaToolStripMenuItem
             // 

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace gestor_de_estudantes
 {
@@ -41,6 +42,15 @@ namespace gestor_de_estudantes
                 bancoDeDados.fecharConexao();
                 return false;
             }
+        }
+
+        public DataTable pegarEstudantes(MySqlCommand comando) 
+        {
+            comando.Connection = bancoDeDados.getConexao;
+            MySqlDataAdapter adaptador = new MySqlDataAdapter(comando);
+            DataTable tabela = new DataTable();
+            adaptador.Fill(tabela);
+            return tabela;
         }
     }
 }

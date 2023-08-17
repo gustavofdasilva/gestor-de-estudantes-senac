@@ -22,5 +22,12 @@ namespace gestor_de_estudantes
             FormInserirEstudante inserirEstudante = new FormInserirEstudante();
             inserirEstudante.Show(this);
         }
+
+        private void listarEstudanteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormListarEstudantes formListarEstudantes = new FormListarEstudantes();
+            formListarEstudantes.Show(this);
+
+        }
     }
 }
