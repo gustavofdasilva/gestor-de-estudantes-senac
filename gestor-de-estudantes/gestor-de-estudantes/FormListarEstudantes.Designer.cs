@@ -41,6 +41,7 @@
             this.dataGridViewLista.Name = "dataGridViewLista";
             this.dataGridViewLista.Size = new System.Drawing.Size(798, 365);
             this.dataGridViewLista.TabIndex = 0;
+            this.dataGridViewLista.DoubleClick += new System.EventHandler(this.dataGridViewLista_DoubleClick);
             // 
             // buttonAtualizar
             // 
@@ -50,6 +51,7 @@
             this.buttonAtualizar.TabIndex = 1;
             this.buttonAtualizar.Text = "Atualizar";
             this.buttonAtualizar.UseVisualStyleBackColor = true;
+            this.buttonAtualizar.Click += new System.EventHandler(this.buttonAtualizar_Click);
             // 
             // FormListarEstudantes
             // 

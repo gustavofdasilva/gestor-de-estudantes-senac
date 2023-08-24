@@ -31,5 +31,15 @@ namespace gestor_de_estudantes
             colunaDeImagens.ImageLayout = DataGridViewImageCellLayout.Stretch;
             dataGridViewLista.AllowUserToAddRows= false;
         }
+
+        private void buttonAtualizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridViewLista_DoubleClick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

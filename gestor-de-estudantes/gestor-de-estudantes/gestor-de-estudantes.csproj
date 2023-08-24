@@ -49,6 +49,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAtualizarEstudantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAtualizarEstudantes.Designer.cs">
+      <DependentUpon>FormAtualizarEstudantes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
     <Compile Include="Estudante.cs" />
     <Compile Include="FormInserirEstudante.cs">
       <SubType>Form</SubType>
@@ -77,6 +84,9 @@
     <Compile Include="MEU_BD.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAtualizarEstudantes.resx">
+      <DependentUpon>FormAtualizarEstudantes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInserirEstudante.resx">
       <DependentUpon>FormInserirEstudante.cs</DependentUpon>
     </EmbeddedResource>

@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/gestor-de-estudantes/gestor-de-estudantes/FormAtualizarEstudantes.resx
+/gestor-de-estudantes/gestor-de-estudantes/FormAtualizarEstudantes.Designer.cs
+/gestor-de-estudantes/gestor-de-estudantes/FormAtualizarEstudantes.cs
